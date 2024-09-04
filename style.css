@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em 2em 1em 1em;
+    background-color: black;
+}
+
+.logo h1{
+    color: white;
+    font-size: xx-large;
+}
+
+.links{
+    margin-right: 10%;
+}
+.links ul{
+    display: flex;
+    gap: 2em;
+}
+.links li{
+    font-size: x-large;
+}
+.links a{
+    color: white;
+}
+.links img{
+    display: none;
+}
+
+
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.hero-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero-btn a{
+    background-color: blue;
+    padding: .5em 2em .5em 2em;
+    color: white;
+
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink-box{
+    background-color: rgb(255, 0, 204);
+    height: 24vw;
+    width: 30vw;
+}
+
+.black-box{
+    background-color: black;
+    height: 24vw;
+    width: 20vw;
+
+    translate: 65% 10%;
+}
+
+.blue-box{
+    background-color: blue;
+    height: 5vw;
+    width: 8vw;
+    
+    translate: -65% -50%;
+}
+.blue-box2{
+    background-color: blue;
+    height: 5vw;
+    width: 8vw;
+
+    translate: 90% -150%;
+}
+
+
+
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    padding: 1em 2em 1em 1em;
+    background-color: black;
+}
+footer p{
+    color: white;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    margin-left: 10%;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1em;
+
+    margin-right: 10%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: rgb(203, 201, 201);
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: .5em .5em .5em .5em;
+        background-color: gray;
+    }
+    .logo h1{
+        color: black;
+        font-size: xx-large;
+    }
+    
+    .links{
+        margin-right: 0;
+
+        display: flex;
+        justify-content: end;
+    }
+    .links img{
+        display: block;
+        height: 10%;
+        width: 10%;
+    }
+    .links ul{
+        display: none;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        gap: 5em;
+    }
+    .hero-title{
+        margin-bottom: 2em;
+    } 
+
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pink-box{
+        background-color: rgb(255, 0, 204);
+        height: 24vw;
+        width: 30vw;
+    }
+    
+    .black-box{
+        background-color: black;
+        height: 24vw;
+        width: 20vw;
+/*     
+        translate: 65% 10%; */
+    }
+    
+    .blue-box{
+        background-color: blue;
+        height: 5vw;
+        width: 8vw;
+/*         
+        translate: -65% -50%; */
+    }
+    .blue-box2{
+        background-color: blue;
+        height: 5vw;
+        width: 8vw;
+/*     
+        translate: 90% -150%; */
+    }
+}
